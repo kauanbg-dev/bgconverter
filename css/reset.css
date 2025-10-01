@@ -1,60 +1,64 @@
-/* RESET GLOBAL */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+@media (max-width: 1200px) {
+  main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15%;
+  }
+
+  main .main-content .text,
+  main .main-content .techs {
+    text-align: center;
+  }
+
+  main .main-content .text p {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  main .techs .cards-container, .main-content .text p {
+    margin-top: 32px;
+  }
 }
 
-/* BODY */
-body {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-/* LINKS */
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
+        text-align: center;
+    }
 
-/* IMAGENS */
-img {
-  max-width: 100%;
-  display: block;
-}
+    header h1 {
+        font-size: 2em;
+    }
 
-/* LISTAS */
-ul, ol {
-  list-style: none;
-}
+    header nav {
+        margin-top: 24px;
+    }
 
-/* TITULOS */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-}
+    header nav a {
+        font-size: 1em;
+    }
 
-/* BOTÕES */
-button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
+    main .techs .cards-container .card {
+        width: 60px;
+        height: 60px;
+    }
 
-/* INPUTS */
-input, textarea {
-  font-family: inherit;
-  border: none;
-  outline: none;
-}
+    main .main-content .text h2, .main-content .techs h2 {
+        font-style: 1.8em;
+    }
 
-/* HTML */
-html {
-  scroll-behavior: smooth;
+    main figure img {
+        width: 250px;
+        height: 250px;
+    }
 }
