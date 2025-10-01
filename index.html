@@ -1,83 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Kauan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$BgConverter</title>
+    <!-- CSS -->
+     <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/styles.css">
+    <!--FONTS  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/4c2f84ae4c.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Kauan Borges</h1>
-    <nav>
-      <a href="https://github.com/kauanbg-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/kauan-borges-079074370/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/eukauan.dev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </nav>
-  </header>
+    <header>
+        <h1>$BgConverter</h1>
+    </header>
+    
+    <main>
+        <form id="form">
+            <section class="inputs-container">
+                <div class="form-group">
+                   <label for="value-real">Valor a ser convertido (R$)</label> 
+                   <input 
+                   type="number"
+                   placeholder="R$ 00,00"
+                   id="value-real"
+                   name="value-real"
+                   max="10000000"
+                   >
+                </div>
 
-  <main>
-    <section class="main-content">
-      <article class="text">
-        <h2>Sobre mim</h2>
-        <p>
-          Olá, eu sou Kauan Borges 👋<br />
-          Atualmente curso Análise e Desenvolvimento de Sistemas (4º período) e tenho uma paixão enorme por programação e tecnologia. Estou sempre em busca de novos aprendizados e desafios, explorando diferentes linguagens, ferramentas e metodologias que me ajudam a evoluir como desenvolvedor.<br />
-          Este portfólio é o espaço onde compartilho minha trajetória: projetos que desenvolvi, ideias que coloquei em prática e experiências que me ajudam a crescer a cada dia. Meu objetivo é não apenas mostrar o que já fiz, mas também inspirar e colaborar com quem também acredita no poder da tecnologia para transformar o mundo.<br />
-          Fique à vontade para explorar meus projetos, conhecer um pouco mais sobre meu trabalho e acompanhar de perto minha jornada na área de TI 🚀
-        </p>
-      </article>
+                <div class="form-group">
+                   <label for="">Escolha a moeda</label> 
+                   <select id="currency">
+                        <option value="">Selecione...</option>
+                        <option value="eur">Euro</option>
+                        <option value="dol">Dólar</option>
+                   </select>
+                   
+                </div>
 
-      <aside class="techs">
-        <h2>🧑‍💻 Tecnologias</h2>
-        <div class="cards-container">
-          <div class="card"><img src="img/html-5-svgrepo-com.svg" alt="Logo do HTML5" /></div>
-          <div class="card"><img src="img/css-3-svgrepo-com.svg" alt="Logo do CSS3" /></div>
-          <div class="card"><img src="img/js-svgrepo-com.svg" alt="Logo do JavaScript" /></div>
-          <div class="card"><img src="img/react-brands-solid-full.svg" alt="Logo do React" /></div>
-        </div>
-      </aside>
+            </section>
 
-      <!-- Seção de Projetos abaixo das tecnologias -->
-      <section class="projetos">
-        <h2>🚀 Projetos</h2>
-        <div class="projetos-container">
-          <div class="projeto-card">
-            <img src="img/bgconverter-prewiew.png" alt="Preview do BgConverter" />
-            <h3>BgConverter</h3>
-            <p>Conversor de moedas com taxas em tempo real usando CurrencyAPI. Interface responsiva e animações suaves.</p>
-            <div class="links">
-              <a href="https://bgconverter.vercel.app/" target="_blank">🔗 Ver projeto</a>
-              <a href="https://github.com/kauanbg-dev/bgconverter" target="_blank">📂 Ver código</a>
-            </div>
-          </div>
-          <!-- Adicione mais projetos aqui -->
-        </div>
-      </section>
-    </section>
+            <button type="submit">converter</button>
+        </form>
 
-    <figure>
-      <img src="img/perfil.jpeg" alt="Imagem de Kauan" />
-      <figcaption>Kauan Borges de Souza</figcaption>
-    </figure>
-  </main>
+        <h2 id="result"></h2>
+    </main>
 
-  <footer>
-    <span>&copy; Kauan Borges, 2025 - Todos os direitos reservados.</span>
-  </footer>
-</body>
+    <footer>
+        <span>
+            &copy;$BgConverter, 2025. Todos os direitos reservados.
+        </span>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body> 
 </html>
