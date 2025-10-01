@@ -1,66 +1,101 @@
+/* Layout principal */
 main {
-    width: 60%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
+/* Formulário */
 form {
-    width: 100%;
-    margin-bottom: 12%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  margin-bottom: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Container dos inputs */
 .inputs-container {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 8%;
-
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8%;
 }
 
+/* Grupo de inputs */
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group label {
-    color: #333;
-    font-size: 0.8em;
-    font-weight: 600;
-    margin-bottom:6px;
+  color: #333;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
+/* Botão */
 form button {
-    background-color: #66CDAA;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 700;
-    cursor: pointer;
+  background-color: #66CDAA;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 form button:hover {
-    background-color: #fff;
-    color: #66CDAA;
+  background-color: #fff;
+  color: #66CDAA;
 }
 
+/* Resultado */
 main #result {
-    font-size: 3.5em;
-    color: #2E8B57	;
-    
+  font-size: 3.5em;
+  color: #2E8B57;
+  text-align: center;
 }
 
 main #result span {
-    font-size: 0.6em;
-    margin-right: 50px;
-    margin-left: 50px;
+  font-size: 0.6em;
+  margin: 0 50px;
+}
 
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    padding: 10px;
+  }
 
+  .inputs-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  main #result {
+    font-size: 2em;
+  }
+
+  main #result span {
+    margin: 0 10px;
+    font-size: 0.8em;
+  }
 }
