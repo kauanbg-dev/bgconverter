@@ -1,33 +1,60 @@
+/* RESET GLOBAL */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 'Poppins', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* BODY */
 body {
-    background-color: #eee;
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-input , select, button {
-    border: 0;
-    outline: 0;
-    border-radius: 6px;
-    width: 220px;
-    padding: 10px 14px;
-    font-size: 1em;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-
-    transition: 0.2s ease-in-out;
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
-input:focus, select:focus {
-    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+/* IMAGENS */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* LISTAS */
+ul, ol {
+  list-style: none;
+}
+
+/* TITULOS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* BOTÕES */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* INPUTS */
+input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* HTML */
+html {
+  scroll-behavior: smooth;
 }
