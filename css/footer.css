@@ -1,12 +1,13 @@
 footer {
-    width: 100%;
-    background-color: #66CDAA;
-    padding: 10px;
-    text-align: center;
+    background-color: #222;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer span {
-    color: #fff;
-    font-size: 0.8em;
+footer spam {
+    font-size: 0.7em;
     font-weight: 500;
 }
