@@ -1,12 +1,32 @@
-header {
-    width: 100%;
-    background-color: #66CDAA;
-    padding: 20px;
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
 
-header h1 {
-    color: #fff;
-    font-size: 3em;
-    text-align: center;
-    cursor: pointer;
+.brand {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #00e0ff;
+  line-height: 1.2;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  color: #b7c3d9;
+}
+
+.source {
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.source:hover,
+.source:focus-visible {
+  text-decoration: underline;
 }

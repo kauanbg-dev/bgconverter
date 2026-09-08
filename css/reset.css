@@ -1,33 +1,45 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 'Poppins', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Segoe UI, system-ui, sans-serif;
 }
 
 body {
-    background-color: #eee;
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  min-height: 100vh;
+  color: #e8eef8;
+  background:
+    radial-gradient(circle at top left, rgba(0, 224, 255, 0.14), transparent 32%),
+    radial-gradient(circle at right, rgba(106, 90, 205, 0.12), transparent 28%),
+    #0b0f19;
+  line-height: 1.5;
 }
 
-input , select, button {
-    border: 0;
-    outline: 0;
-    border-radius: 6px;
-    width: 220px;
-    padding: 10px 14px;
-    font-size: 1em;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-
-    transition: 0.2s ease-in-out;
+button,
+input,
+select {
+  font: inherit;
 }
-input:focus, select:focus {
-    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+input,
+select {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  outline: 0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+select option {
+  background: #101624;
+  color: #e8eef8;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #00e0ff;
+  outline-offset: 2px;
+  border-color: rgba(0, 224, 255, 0.4);
 }
