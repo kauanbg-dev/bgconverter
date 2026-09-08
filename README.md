@@ -19,7 +19,3 @@ Conversor de câmbio com cotação ao vivo. HTML, CSS e JavaScript, no mesmo vis
 - CSS
 - JavaScript
 - [CurrencyAPI](https://currencyapi.com/) para as cotações
-
-## Como rodar
-
-Abra `index.html` no navegador ou sirva a pasta com qualquer servidor estático.
