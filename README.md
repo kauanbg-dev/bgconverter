@@ -15,7 +15,15 @@ Conversor de câmbio com cotação ao vivo. HTML, CSS e JavaScript, no mesmo vis
 
 ## Stack
 
-- HTML
-- CSS
-- JavaScript
-- [CurrencyAPI](https://currencyapi.com/) para as cotações
+- HTML / CSS / JavaScript
+- [CurrencyAPI](https://currencyapi.com/) (via `/api/rates` na Vercel)
+
+## Rodar / deploy
+
+A chave da API fica só no servidor (`CURRENCY_API_KEY`), não no front.
+
+1. Copia `.env.example` → `.env` e cola a chave
+2. Na Vercel, cria a variável `CURRENCY_API_KEY` com o mesmo valor
+3. `npx vercel dev` pra testar local com a rota `/api/rates`
+
+Se a chave já vazou no Git alguma vez, gera outra no painel da CurrencyAPI e apaga a antiga.

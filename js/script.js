@@ -10,7 +10,6 @@ const CURRENCIES = [
 ];
 
 const HISTORY_KEY = "bgconverter-history";
-const API_KEY = "cur_live_ndmPdJAe9ovpeT2HPZ22UTlAGflw2jlRmw5qxWzj";
 
 const form = document.getElementById("form");
 const amountInput = document.getElementById("amount");
@@ -121,7 +120,7 @@ async function convert(amount, from, to) {
   }
 
   const response = await fetch(
-    `https://api.currencyapi.com/v3/latest?apikey=${API_KEY}&base_currency=${from}&currencies=${to}`
+    `/api/rates?base=${encodeURIComponent(from)}&currencies=${encodeURIComponent(to)}`
   );
   if (!response.ok) throw new Error("api");
   const payload = await response.json();
