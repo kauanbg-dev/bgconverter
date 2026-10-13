@@ -9,9 +9,9 @@ body {
   min-height: 100vh;
   color: #e8eef8;
   background:
-    radial-gradient(circle at top left, rgba(0, 224, 255, 0.14), transparent 32%),
-    radial-gradient(circle at right, rgba(106, 90, 205, 0.12), transparent 28%),
-    #0b0f19;
+    radial-gradient(circle at top left, rgba(245, 185, 66, 0.16), transparent 32%),
+    radial-gradient(circle at right, rgba(180, 83, 9, 0.12), transparent 28%),
+    #14110c;
   line-height: 1.5;
 }
 
@@ -33,13 +33,13 @@ select {
 }
 
 select option {
-  background: #101624;
+  background: #1c1812;
   color: #e8eef8;
 }
 
 input:focus,
 select:focus {
-  outline: 2px solid #00e0ff;
+  outline: 2px solid #f5b942;
   outline-offset: 2px;
-  border-color: rgba(0, 224, 255, 0.4);
+  border-color: rgba(245, 185, 66, 0.4);
 }
